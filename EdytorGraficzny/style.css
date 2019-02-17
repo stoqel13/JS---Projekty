@@ -1,0 +1,25 @@
+canvas {
+    margin: auto;
+    background: #ececec;
+    width: 100%;
+  }
+  
+  .btn-disabled {
+    color: #fff !important;
+  }
+
+  #paintColor {
+    position: absolute;
+    left: 800px;
+    top: 150px;
+    width: 150px;
+    height: 100px;
+    border: solid 1px black;
+  }
+#paintSize {
+    position: absolute;
+    left: 800px;
+    top: 260px;
+    width: 150px;
+    border: solid 1px black;
+ }
