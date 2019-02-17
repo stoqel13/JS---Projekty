@@ -5,7 +5,7 @@ canvas {
   }
   
   .btn-disabled {
-    color: #fff !important;
+    color: grey !important;
   }
 
   #paintColor {
