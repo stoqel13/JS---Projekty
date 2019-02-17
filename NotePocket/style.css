@@ -1,0 +1,118 @@
+body
+{
+    background-color: rgba(230, 230, 230);
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(44, 54, 64);
+}
+#title
+{
+    margin: 40px;
+    font-size: 40px;
+    text-align: center;
+}
+#X
+{
+    top: -35px;
+    left: 30px;
+    text-align: right;
+    position: relative;
+    cursor: pointer;
+}
+#buttons
+{
+    text-align: center;
+}
+button {
+    background-color: rgba(44, 54, 64);
+    border: none;
+    border-radius: 10px;
+    color: rgba(230, 230, 230);
+    padding: 15px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 50px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    width: 250px;
+}
+#overlay
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.70);
+    z-index: 1000;
+    display: none;
+    text-align: center;
+    cursor: pointer;
+}
+#inputBox
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 800px;
+    background-color: rgba(230, 230, 230);
+    min-height: 600px;
+    padding: 40px;
+    font-size: 25px;
+    z-index: 1001;
+    transform: translate(-50%, -50%);
+    display: none;
+    text-align: center;
+}
+#noteTitle
+{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+#note
+{
+    display: block;
+    width: 100%;
+    height: 400px;
+    resize: none;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+.NoteRow
+{
+    text-align: center;
+}
+.NoteDiv
+{
+    display: inline-block;
+    height: 400px;
+    width: 300px;
+    border: rgba(0, 0, 0, 0.70);
+    border-style: solid;
+    border-width: 1px;
+    margin: 15px 40px;
+    vertical-align: top;
+    padding: 10px;
+    cursor: pointer;
+}
+.NoteTitleDiv
+{
+    border-bottom: rgba(0, 0, 0, 0.70);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    height: 50px;
+    width: 100%;
+    font-size: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.NoteDataDiv
+{
+    font-size: 25px;
+    padding: 10px;
+    word-wrap: break-word;
+}

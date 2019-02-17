@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NotePocket</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    <div id = "title">
+        NotePocket
+    </div>
+    <div id ="buttons">
+            <button onclick="addNote()">Dodaj Notatkę</button>
+            <button onclick="removeNote()">Usuń Notatkę</button>
+    </div>
+    <div id = "overlay" onclick="closeOverlay()">
+    </div>
+    <div id = "inputBox">
+            <div id = "X" onclick="closeOverlay()">X</div>
+            <input type = "text" id = "noteTitle" placeholder = "Wprowadź tytuł notatki" />
+            <textarea id="note" placeholder = "Wprowadź treść notatki"></textarea>
+            <button onclick="addNoteF()">Dodaj Notatkę</button>
+            <button onclick="saveChanges()">Zapisz</button>
+            <button onclick="removeNote()">Usuń Notatkę</button>
+    </div>
+    <hr width="85%">
+    <div id = "Notes">
+        <div id = "Notes1" class = "NoteRow">
+            <div id = "N1" class = "NoteDiv" onclick = editNote(1)>
+                <div id = "T1" class="NoteTitleDiv"></div>
+                <div id = "Nd1" class= "NoteDataDiv"></div>
+            </div>
+            <div id = "N2" class = "NoteDiv" onclick = editNote(2)>
+                <div id = "T2" class="NoteTitleDiv"></div>
+                <div id = "Nd2" class= "NoteDataDiv"></div>
+            </div>
+            <div id = "N3" class = "NoteDiv" onclick = editNote(3)>
+                <div id = "T3" class="NoteTitleDiv"></div>
+                <div id = "Nd3" class= "NoteDataDiv"></div>
+            </div>
+            <div id = "N4" class = "NoteDiv" onclick = editNote(4)>
+                <div id = "T4" class="NoteTitleDiv"></div>
+                <div id = "Nd4" class= "NoteDataDiv"></div>
+            </div>
+        </div>
+        <div id = "Notes2" class = "NoteRow">
+            <div id = "N5" class = "NoteDiv" onclick = editNote(5)>
+                <div id = "T5" class="NoteTitleDiv"></div>
+                <div id = "Nd5" class= "NoteDataDiv"></div>
+            </div>
+            <div id = "N6" class = "NoteDiv" onclick = editNote(6)>
+                <div id = "T6" class="NoteTitleDiv"></div>
+                <div id = "Nd6" class= "NoteDataDiv"></div>
+            </div>
+            <div id = "N7" class = "NoteDiv" onclick = editNote(7)>
+                <div id = "T7" class="NoteTitleDiv"></div>
+                <div id = "Nd7" class= "NoteDataDiv"></div>
+            </div>
+            <div id = "N8" class = "NoteDiv" onclick = editNote(8)>
+                <div id = "T8" class="NoteTitleDiv"></div>
+                <div id = "Nd8" class= "NoteDataDiv"></div>
+            </div>
+        </div>
+        <div id = "Notes3" class = "NoteRow">
+            <div id = "N9" class = "NoteDiv" onclick = editNote(9)>
+                <div id = "T9" class="NoteTitleDiv"></div>
+                <div id = "Nd9" class= "NoteDataDiv"></div>
+            </div>
+            <div id = "N10" class = "NoteDiv" onclick = editNote(10)>
+                <div id = "T10" class="NoteTitleDiv"></div>
+                <div id = "Nd10" class= "NoteDataDiv"></div>
+            </div>
+            <div id = "N11" class = "NoteDiv" onclick = editNote(11)>
+                <div id = "T11" class="NoteTitleDiv"></div>
+                <div id = "Nd11" class= "NoteDataDiv"></div>
+            </div>
+            <div id = "N12" class = "NoteDiv" onclick = editNote(12)>
+                <div id = "T12" class="NoteTitleDiv"></div>
+                <div id = "Nd12" class= "NoteDataDiv"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
