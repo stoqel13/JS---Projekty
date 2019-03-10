@@ -22,8 +22,9 @@
               <input type="range" min="1" max="20" id="paintSize">
               <input type="color" id="paintColor">
               <input type="file" class="custom-file-input" id="upload-file">
-              <label for="upload-file" class="custom-file-label">Wczytaj Zdjęcie</label>
+              <label for="upload-file" class="custom-file-label">Wczytaj Obrazek</label>
             </div>
+
             <canvas id="canvas"></canvas>
                  
             <h4 class="text-center my-3">Filtry</h4>
@@ -58,10 +59,17 @@
                 </div>
               </div>
             </div>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                  <button id="download-btn" class="btn btn-primary btn-block">Pobierz Obrazek</button>
+                </div>
+                <div class="col-md-6">
+                  <button id="revert-btn" class="btn btn-danger btn-block">Cofnij Zmiany</button>
+                </div>
           </div>
         </div>
       </div>
-      <script src="script.js"></script>
+      <script src="javascript.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
 </body>
 </html>
