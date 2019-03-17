@@ -55,6 +55,20 @@ function saveChanges(){
     location.reload();
 }
 
+// Dodanie notatki do Local Storage
+function addNoteF(){
+    
+    let ndata = { "Title" : noteTitle.value,"Note" : note.value, "ID" : number};
+    let noteData = JSON.stringify(ndata);
+    localStorage.setItem(number, noteData);
+    
+    document.getElementById('T' + number).innerHTML = noteTitle.value;
+    document.getElementById('Nd' + number).innerHTML = note.value;
+    
+    number += 1;
+    if (number > 12) { number = 12};
+}
+
 // Sortowanie notatek
 function sortNotes(){
     
